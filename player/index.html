@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="album-cover">
+            <img id="album-cover" src="binary.jpeg" alt="Album Cover">
+        </div>
+        
+        <div class="song-info">
+            <h2 id="song-title">Select a song</h2>
+            <p id="artist">from the playlist</p>
+        </div>
+        
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+        
+        <div class="time-info">
+            <span id="current-time">0:00</span>
+            <span id="total-time">0:00</span>
+        </div>
+        
+        <div class="controls">
+            <button id="previous" class="control-btn"><i class="fas fa-step-backward"></i></button>
+            <button id="play-pause" class="control-btn primary"><i class="fas fa-play"></i></button>
+            <button id="next" class="control-btn"><i class="fas fa-step-forward"></i></button>
+            <button id="stop" class="control-btn"><i class="fas fa-stop"></i></button>
+        </div>
+        
+        <div class="volume-control">
+            <i class="fas fa-volume-down"></i>
+            <div class="volume-slider">
+                <div id="volume-progress"></div>
+            </div>
+            <span id="volume-display">100%</span>
+        </div>
+        
+        <div class="playlist">
+            <h3>Playlist</h3>
+            <ul id="playlist-items">
+            </ul>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
